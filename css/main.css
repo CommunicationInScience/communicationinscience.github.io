@@ -693,3 +693,321 @@ td.gutter {
 .greyblock h3 {
   margin-top: 0;
 }
+
+/* ============================================================
+   CIS — Custom Site Styles
+   ============================================================ */
+
+/* --- Hero (home layout) --- */
+
+.cis-hero {
+  background: linear-gradient(135deg, #1c4f82 0%, #1a8878 100%);
+  color: #fff;
+  padding: 80px 0 70px;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .cis-hero {
+    padding-top: 130px;
+  }
+}
+.cis-hero h1 {
+  color: #fff;
+  font-size: 2.3em;
+  margin: 0 0 20px;
+  line-height: 1.25;
+}
+.cis-hero-sub {
+  font-size: 1.12em;
+  opacity: 0.92;
+  margin: 0 0 34px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.cis-btn-white {
+  background: #fff;
+  color: #1c4f82;
+  border-color: #fff;
+  font-weight: 700;
+  margin: 6px;
+}
+.cis-btn-white:hover,
+.cis-btn-white:focus {
+  background: #f0f0f0;
+  border-color: #f0f0f0;
+  color: #1c4f82;
+}
+.cis-btn-ghost {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255,255,255,0.65);
+  font-weight: 700;
+  margin: 6px;
+}
+.cis-btn-ghost:hover,
+.cis-btn-ghost:focus {
+  border-color: #fff;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+/* --- Page sections --- */
+
+.cis-section {
+  padding: 60px 0;
+}
+.cis-why-section {
+  padding: 60px 0;
+  background: #eef5fb;
+}
+.cis-cta-section {
+  padding: 70px 0;
+  background: linear-gradient(135deg, #1c4f82 0%, #1a8878 100%);
+  text-align: center;
+  color: #fff;
+}
+.cis-cta-section h2 {
+  color: #fff;
+  margin: 0 0 16px;
+  font-size: 1.8em;
+}
+.cis-cta-section p {
+  opacity: 0.9;
+  font-size: 1.05em;
+  margin: 0 0 30px;
+}
+
+/* --- Section headings --- */
+
+.cis-section-heading {
+  text-align: center;
+  font-size: 1.6em;
+  margin: 0 0 36px;
+}
+.cis-section-heading::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: #1c4f82;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* --- Intro paragraph --- */
+
+.cis-intro-text {
+  font-size: 1.05em;
+  line-height: 1.75;
+  text-align: center;
+  margin: 0 0 44px;
+  color: #444;
+}
+
+/* --- Service cards --- */
+
+.cis-cards {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+.cis-card {
+  flex: 1;
+  min-width: 180px;
+  background: #fff;
+  border: 1px solid #dde4ed;
+  border-radius: 6px;
+  padding: 30px 22px;
+  text-align: center;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.cis-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.09);
+  transform: translateY(-4px);
+}
+.cis-card-icon {
+  font-size: 2.3em;
+  color: #1c4f82;
+  margin-bottom: 16px;
+  display: block;
+}
+.cis-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.1em;
+}
+.cis-card p {
+  font-size: 0.88em;
+  color: #666;
+  margin: 0 0 18px;
+  line-height: 1.55;
+}
+.cis-card-link {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.88em;
+  font-weight: 700;
+  color: #1c4f82;
+  text-decoration: none;
+}
+.cis-card-link:hover {
+  text-decoration: underline;
+  color: #1c4f82;
+}
+
+/* --- Check list --- */
+
+.cis-check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.cis-check-list li {
+  padding: 10px 0 10px 4px;
+  border-bottom: 1px solid #d4e6f4;
+  font-size: 0.96em;
+  line-height: 1.5;
+  color: #333;
+}
+.cis-check-list li:last-child {
+  border-bottom: none;
+}
+.cis-check-list .fa {
+  color: #1a8878;
+  margin-right: 8px;
+  font-size: 1em;
+}
+
+/* --- Page lead box --- */
+
+.cis-page-lead {
+  background: #eef5fb;
+  border-left: 4px solid #1c4f82;
+  padding: 22px 28px;
+  margin: 0 0 36px;
+  border-radius: 0 6px 6px 0;
+  font-size: 1.04em;
+  line-height: 1.75;
+  color: #333;
+}
+
+/* --- Two-column layout --- */
+
+.cis-two-col {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin: 0 0 30px;
+}
+.cis-two-col > div {
+  flex: 1;
+  min-width: 220px;
+}
+
+/* --- Numbered steps --- */
+
+.cis-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: step-counter;
+}
+.cis-steps li {
+  counter-increment: step-counter;
+  position: relative;
+  padding: 14px 14px 14px 56px;
+  background: #f8f9fa;
+  border: 1px solid #e0e6ed;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 0.95em;
+  line-height: 1.55;
+}
+.cis-steps li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1c4f82;
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85em;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.cis-steps li strong {
+  display: block;
+  margin-bottom: 3px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* --- Tutorial module list --- */
+
+.cis-module-list .greyblock {
+  border-left: 4px solid #1c4f82;
+  border-radius: 0 6px 6px 0;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  background: #f8f9fa;
+}
+.cis-module-list .greyblock h3 {
+  font-size: 1em;
+  color: #1c4f82;
+}
+.cis-module-list .greyblock .fa {
+  color: #1a8878;
+  margin-right: 6px;
+}
+
+/* --- Contact cards --- */
+
+.cis-contact-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px 0 40px;
+}
+.cis-contact-card {
+  flex: 1;
+  min-width: 180px;
+  background: #f8f9fa;
+  border: 1px solid #dde4ed;
+  border-radius: 6px;
+  padding: 28px 20px;
+  text-align: center;
+}
+.cis-contact-card .fa {
+  font-size: 2em;
+  color: #1c4f82;
+  margin-bottom: 14px;
+  display: block;
+}
+.cis-contact-card h3 {
+  margin: 0 0 8px;
+  font-size: 1em;
+}
+.cis-contact-card p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* --- Responsive --- */
+
+@media only screen and (max-width: 767px) {
+  .cis-hero h1 { font-size: 1.65em; }
+  .cis-hero-sub { font-size: 0.98em; }
+  .cis-cards { flex-direction: column; }
+  .cis-two-col { flex-direction: column; }
+  .cis-contact-grid { flex-direction: column; }
+  .cis-section,
+  .cis-why-section { padding: 40px 0; }
+  .cis-cta-section { padding: 50px 0; }
+  .cis-cta-section h2 { font-size: 1.4em; }
+}
