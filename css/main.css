@@ -680,3 +680,16 @@ td.gutter {
 #social-share-section {
   margin-bottom: 30px;
 }
+
+/* --- Service blocks --- */
+
+.greyblock {
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+}
+.greyblock h3 {
+  margin-top: 0;
+}
